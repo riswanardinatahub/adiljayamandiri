@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css"
+        integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>PT. ADIL JAYA MANDIRI</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="section-navbar sticky-top shadow-sm p-3 mb-5 bg-body rounded"
+        style="background-color: rgb(255, 255, 255);">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light " data-aos="fade-up">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/logo1.svg" alt="" style="width: 160px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#scrollspyHeadingtop">Halaman
+                                    Utama</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading1">Tentang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading3">Galleri</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading5">Kontak</a>
+                            </li>
+
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Indonesia
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">
+                                            <span class="flag-icon flag-icon-id">
+                                            </span>
+                                            Indonesia
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <span class="flag-icon flag-icon-au">
+                                            </span>English</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <span class="flag-icon flag-icon-cn">
+                                            </span>
+                                            Cina
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0">
+        <!-- Banner -->
+        <section id="scrollspyHeadingtop" class="section-banner mt-3">
+            <div class="container ">
+                <div class="row justify-content-center" data-aos="flip-left" data-aos-duration="3000">
+                    <div class="col-11">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/banner.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="color:black;">Produk 1</h5>
+                                        <a href="/detail.html" class="btn btn-primary">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/banner2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 style="color:black;">Produk 2</h5>
+                                        <a href="/detail.html" class="btn btn-primary">Detail</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/banner3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption  d-none d-md-block">
+                                        <h5 style="color:black;">Produk 3</h5>
+                                        <a href="/detail.html" class="btn btn-primary">Detail</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About US -->
+        <section id="scrollspyHeading1" class="section-aboutus mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="judul text-center">
+                            <h3>Tentang Kami</h3>
+                            <div class="row justify-content-center">
+                                <div class="border rounded-pill garis" style=" height: 5px; width: 100px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12 col-md-6 col-lg-6" data-aos="flip-right" data-aos-duration="3000">
+                        <div class="thumbnail-aboutus text-center">
+                            <img src="assets/aboutus1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5 col-lg-5 mt-3 pt-5" data-aos="flip-left" data-aos-duration="4000">
+                        <div class="profil">
+                            <div class="title-profil text-center pt-3">
+                                <h5>CV. ADIL JAYA MANDIRI</h5>
+                            </div>
+                            <div class="detail-profil text-center pt-2 px-3">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime aliquam
+                                    nesciunt, dolorum odio alias libero atque blanditiis doloribus tempore nobis quas
+                                    incidunt? Laudantium labore dicta, eum voluptatum iste aut?
+
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem ea
+                                    sequi animi repellendus magnam voluptas repellat dolores voluptate, veritatis
+                                    asperiores adipisci quae blanditiis, id ullam explicabo nostrum natus nisi.
+
+                                </p>
+                            </div>
+
+                            <div class="selengkapnya text-center">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <p class="fst-italic text-underline" style="color: whitesmoke;"><u>SELENGKAPNYA</u>
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">CV. ADIL JAYA MANDIRI</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <p style="text-align: justify;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                            maxime aliquam
+                            nesciunt, dolorum odio alias libero atque blanditiis doloribus tempore nobis quas
+                            incidunt? Laudantium labore dicta, eum voluptatum iste aut?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem ea
+                            sequi animi repellendus magnam voluptas repellat dolores voluptate, veritatis
+                            asperiores adipisci quae blanditiis, id ullam explicabo nostrum natus nisi.</p>
+
+
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                            maxime aliquam
+                            nesciunt, dolorum odio alias libero atque blanditiis doloribus tempore nobis quas
+                            incidunt? Laudantium labore dicta, eum voluptatum iste aut?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem ea
+                            sequi animi repellendus magnam voluptas repellat dolores voluptate, veritatis
+                            asperiores adipisci quae blanditiis, id ullam explicabo nostrum natus nisi.
+                            pasir, atau biji besi di Vessel.</p>
+
+                        <p style="text-align: justify;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime aliquam
+                            nesciunt, dolorum odio alias libero atque blanditiis doloribus tempore nobis quas
+                            incidunt? Laudantium labore dicta, eum voluptatum iste aut?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem ea
+                            sequi animi repellendus magnam voluptas repellat dolores voluptate, veritatis
+                            asperiores adipisci quae blanditiis, id ullam explicabo nostrum natus nisi.
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- OurService -->
+        <section id="scrollspyHeading2" class="section-ourservice mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="judul text-center">
+                            <h3>Galleri</h3>
+                            <div class="row justify-content-center">
+                                <div class="border rounded-pill garis" style=" height: 5px; width: 100px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12 col-md-3 mt-1">
+                        <div class="card no-border"
+                            style="width: 18rem; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                            <img src="assets/banner.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Beli
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mt-1">
+                        <div class="card no-border"
+                            style="width: 18rem; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                            <img src="assets/banner2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Beli
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mt-1">
+                        <div class="card no-border"
+                            style="width: 18rem; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                            <img src="assets/banner3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button trigger modal -->
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Beli
+                                    </button>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mt-1">
+                        <div class="card no-border"
+                            style="width: 18rem; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                            <img src="assets/banner.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+
+
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Beli
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Produk 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/deskripsi1.jpg" class="img-fluid" alt="">
+                        <p style="text-align: justify;" class="mt-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime aliquam
+                            nesciunt, dolorum odio alias libero atque blanditiis doloribus tempore nobis quas
+                            incidunt? Laudantium labore dicta, eum voluptatum iste aut?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem ea
+                            sequi animi repellendus magnam voluptas repellat dolores voluptate, veritatis
+                            asperiores adipisci quae blanditiis, id ullam explicabo nostrum natus nisi.
+                        </p>
+
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nama</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email/No Telpon</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button"><i class="far fa-comments"></i> Minta
+                                    Penawaran</button>
+
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision & Mission -->
+
+
+
+        <!-- Structure Organizations -->
+
+
+        <!-- Contact -->
+
+        <section id="scrollspyHeading5" class="section-contact mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="judul text-center">
+                            <h3>Kontak</h3>
+                            <div class="row justify-content-center">
+                                <div class="border rounded-pill garis" style=" height: 5px; width: 100px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="peta overflow-hidden">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.6618637494915!2d116.0003949813685!3d-3.4356737872439154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de8b5d42c5ec793%3A0xebd742941229f1!2sJl.%20Karya%20Stihl%2C%20Kp.%20Baru%2C%20Simpang%20Empat%2C%20Kabupaten%20Tanah%20Bumbu%2C%20Kalimantan%20Selatan%2072273!5e0!3m2!1sid!2sid!4v1636216185846!5m2!1sid!2sid"
+                                    width="600" height="450" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="list-contact">
+                            <ul class="list-group border-0">
+                                <a href="mailto:test@gmail.com" class="text-decoration-none">
+                                    <li class="list-group-item border-0 d-flex">
+                                        <div class="icon">
+                                            <i class="fas fa-envelope-open-text"></i>
+                                        </div>
+                                        <span>
+                                            ajmandiri@gmail.com
+                                        </span>
+                                    </li>
+                                </a>
+                                <!-- https://api.whatsapp.com/send?&phone=6282227051563 -->
+                                <a href="#" class="text-decoration-none">
+                                    <li class="list-group-item border-0 d-flex">
+                                        <div class="icon">
+                                            <i class="fas fa-phone-square"></i>
+                                        </div>
+                                        <span>
+                                            087808017676
+                                        </span>
+                                    </li>
+                                </a>
+
+                                <a href="#" class="text-decoration-none">
+                                    <li class="list-group-item border-0 d-flex">
+                                        <div class="icon">
+                                            <i class="fas fa-map-marked-alt"></i>
+                                        </div>
+                                        <span>
+                                            Graha Harapan B15 N0.13, Mustikajaya - Bekasi 17158
+                                        </span>
+                                    </li>
+                                </a>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <a class="whats-app" href="#" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+
+    <footer>
+        <hr style="background-color: #317AB8; height: 2px; border: 0;
+       ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="pt-2 pb-2 text-center">
+                        &copy; 2021 adiljayamakmur.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
