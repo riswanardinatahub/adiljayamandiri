@@ -21,6 +21,33 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>PT. ADIL JAYA MANDIRI</title>
+
+    <style type="text/css">
+        /*google translate Dropdown */
+
+        #google_translate_element select {
+            background: #f6edfd;
+            color: #383ffa;
+            border: none;
+            border-radius: 3px;
+            padding: 6px 8px
+        }
+
+        /*google translate link | logo */
+        .goog-logo-link {
+            display: none !important;
+        }
+
+        .goog-te-gadget {
+            color: transparent !important;
+        }
+
+        /* google translate banner-frame */
+
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,35 +75,15 @@
                                 <a class="nav-link" href="tentangkami.html">Tentang</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading3">Galleri</a>
+                                <a class="nav-link" href="#scrollspyHeading2">Galleri</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#scrollspyHeading5">Kontak</a>
                             </li>
 
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Indonesia
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">
-                                            <span class="flag-icon flag-icon-id">
-                                            </span>
-                                            Indonesia
-                                        </a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">
-                                            <span class="flag-icon flag-icon-au">
-                                            </span>English</a></li>
-                                    <li><a class="dropdown-item" href="#">
-                                            <span class="flag-icon flag-icon-cn">
-                                            </span>
-                                            Cina
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <div id="google_translate_element"></div>
+
+
 
                         </ul>
                     </div>
@@ -89,6 +96,8 @@
 
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
         tabindex="0">
+
+
         <!-- Banner -->
         <section id="scrollspyHeadingtop" class="section-banner mt-3">
             <div class="container ">
@@ -206,7 +215,7 @@
 
         <!-- OurService -->
         <section id="scrollspyHeading2" class="section-ourservice mt-5">
-            <div class="container ">
+            <div class="container mt-5">
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="judul text-center">
@@ -374,11 +383,11 @@
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="judul text-center">
-                            <h3>Kontak</h3>
+                            <!-- <h3>Kontak</h3>
                             <div class="row justify-content-center">
                                 <div class="border rounded-pill garis" style=" height: 5px; width: 100px;">
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -476,6 +485,67 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'ind',
+                autoDisplay: 'true',
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+
+    <!-- <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        type="text/javascript"></script>
+    <script>
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                //defaultLanguage: 'en', 
+                //pageLanguage: 'en', 
+                includedLanguages: 'de,nl,en,es,it,fr',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false,
+                multilanguagePage: true
+            }, 'google_translate_element')
+        };
+
+        //this one I need because of the first menu with "select the language" item,              after the first click on the language it disappears 
+        var clickCount = 0;
+
+        $(window).load(function () {
+
+            $('.translation-icons a').click(function (e) {
+                e.preventDefault();
+
+                var $frame = $('.goog-te-menu-frame:first');
+
+                if (!$frame.size()) {
+                    alert("Error: Could not find Google translate frame.");
+                    return false;
+                }
+
+                //find the a links element inside the gtranlate first frame
+                var langs = $('.goog-te-menu-frame:first').contents().find('.goog-te-menu2 a');
+
+                //the number of the language in flag-elements
+                var placement = $(this).data('placement');
+
+                //this again I need to adjust the mapping numbers of the languages in the flag elements        
+                if (clickCount == 0) {
+                    placement = $(this).data('placement') + 1;
+                    clickCount++;
+                }
+                //and finaly imitate click on the gtranslate element which is the same as the number of the language in flag link
+                langs.eq(placement).find('span.text').click();
+                return false;
+
+            });
+        });
+
+    </script> -->
 
     <script>
         AOS.init();
